@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-9</title>
+</head>
+<body>
+    <h1 style="text-align:center">Cotação do Dolar</h1>
+    <p id="resultado"></p>
+    <script>
+        let valorDolarDia=prompt("Digite o valor do dolar,hoje.");
+        let qtDolar=prompt("Digite a quantidade de dolar de deseja trocar.");
+        let valorTotal;
+         valorTotal=Number(qtDolar*valorDolarDia);
+
+        document.getElementById("resultado").innerHTML=valorTotal;
+        //document.writeln(valorTotal);
+
+    </script>
+</body>
+</html>
