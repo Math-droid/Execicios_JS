@@ -10,13 +10,13 @@
     <h1 style="text-align:center">Cotação do Dolar</h1>
     <p id="resultado"></p>
     <script>
-        let valorDolarDia=prompt("Digite o valor do dolar,hoje.");
-        let qtDolar=prompt("Digite a quantidade de dolar de deseja trocar.");
+        let valorDolarDia= prompt("Digite o valor do dolar, hoje");
+        let qtdDolar = prompt("Digite a quantidade de dolar que deseja trocar");
         let valorTotal;
-         valorTotal=Number(qtDolar*valorDolarDia);
-
-        document.getElementById("resultado").innerHTML=valorTotal;
+        valorTotal = qtdDolar * valorDolarDia;
+       
         //document.writeln(valorTotal);
+        document.getElementById("resultado").innerHTML = valorTotal;
 
     </script>
 </body>

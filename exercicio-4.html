@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-4</title>
+</head>
+<body>
+    <div id="Boletim"></div>
+    <script>
+        let disciplina1=prompt("Disciplina: ")
+        let nota1=prompt("Nota: ")
+        let disciplina2=prompt("Disciplina: ")
+        let nota2=prompt("Nota: ")
+        let disciplina3=prompt("Disciplina: ")
+        let nota3=prompt("Nota: ")
+        let nome= prompt("Nome do Aluno: ")
+        let media
+        media=(Number(nota1)+Number(nota2)+Number(nota3))/3
+        document.getElementById("Boletim").innerHTML=
+        "Disciplina: "+disciplina1+"Nota: "+nota1+
+        "<br>Disciplina: "+disciplina2+"Nota: "+nota2+
+        "<br>Disciplina: "+disciplina3+"Nota: "+nota3;
+    </script>
+</body>
+</html>
