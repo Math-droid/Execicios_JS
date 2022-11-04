@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-8</title>
+</head>
+<body>
+    <h1>Pedido do Lanche</h1>
+    <h3>Menu</h3>
+    <h3>
+        HotDog = 1 real<br>
+        Hamburger= 1.30 real<br>
+        Chesseburguer = 1.50 real<br>
+        RefrigeranteLata = 1 real<br>
+        BatataFritas = 0.8 centavos<br>
+    </h3>  
+    <h3>---------Pedido--------</h3>
+    <div id="resultadoPedido"></div>
+    <script>
+       const HotDog = 1;
+       const Hamburger= 1.30;
+       const Chesseburguer = 1.50;
+       const RefrigeranteLata = 1;
+       const BatataFritas = 0.8;
+       let Cliente = prompt("Qual o seu nome?");
+       let Qtd_Hotdog = prompt("Quantos HotDog vc deseja?")
+       let Qtd_Hamburger = prompt("Quantos Hamburgers vc deseja?")
+       let Qtd_Chesseburguer = prompt("Quantos Chesseburgueres vc deseja?")
+       let Qtd_RefrigeranteLata = prompt("Quantos Refrigerantes vc deseja?")
+       let Qtd_BatataFritas = prompt("Quantos Batatas Fritas vc deseja?")
+       let valor_Total= 
+        (HotDog*Qtd_Hotdog)+(Hamburger*Qtd_Hamburger)+(Chesseburguer*Qtd_Chesseburguer)+(RefrigeranteLata*Qtd_RefrigeranteLata)+(BatataFritas*Qtd_BatataFritas)
+       document.getElementById("resultadoPedido").innerHTML = "Cliente: " +Cliente+"<br>Total Pedido: R$"+valor_Total;
+    </script>
+</body>
+</html>
