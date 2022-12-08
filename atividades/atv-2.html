@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade-2</title>
+</head>
+<body>
+    <h1>Filtro de candidatos a vaga</h1>
+    <div id="so"></div>
+    <script>   
+    let num=""
+    let candidato=""
+    let idade=""
+    let idade2=""
+    let sexo
+    let m=""
+    let f=""
+    let expe = 2;   
+    let contador=""
+    while(contador<="4"){
+        
+        num=prompt("Escreva seu número: ")
+        idade=Number(prompt("Idade: "))
+        if(idade<"18"){
+            alert("Idade inválida")
+            break
+        }
+        else{
+            idade2 +=+ idade
+        }
+        sexo=Number(prompt("Qual seu sexo? \n 1-Masculino \n 0-Feminino"))
+       
+        if(sexo==1){
+            m++
+        }else if(sexo==0){
+            f++      
+        }else{
+            alert("Resposta Inválida")
+            break
+        }
+        expe=Number(prompt("Tem experiência Profissional?: \n1-Sim \n 0-Não"))
+        
+        if(expe==1){
+            let s=""
+            s++
+        }else if(expe==0){
+            let n=""
+            n++
+        }else{
+            alert("Resposta inválido")
+            break
+        }
+    contador++
+    candidato++
+    idade2=idade2/candidato
+    console.log("Número do candidato"+num+"\n idade do candidato: "+idade)
+}
+document.getElementById("so").innerHTML="Número de candidatos: "+candidato+"<br> Idade média: "+idade2+"<br>Quantos tem Experiencia: "+contador
+ 
+    </script>
+</body>
+</html>

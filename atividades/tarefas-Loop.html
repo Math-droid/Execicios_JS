@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas com Loop</title>
+</head>
+<body>
+    <h1>Tarefas com Loop</h1>
+    <div id="so"></div>
+    <div id="so1"></div>
+    <script>
+        let pecasTotal="0";
+        let kk=""
+        let jd=""
+        let estado=""
+        let contagem=1
+        while(contagem<=4){
+        let num=Number(prompt("Digite o numero da Peça: "))
+        
+        estado=prompt("Qual o estado da peça? Digite\n 1 para Aprovado e\n 0 para Reprovado")
+             if (estado ==="1"){
+                estado="Aprovado"
+                jd++
+                pecasTotal++
+             }else if(estado ==="0"){
+                estado="Reprovado"
+                kk++  
+                pecasTotal++     
+            }
+        contagem++
+        }
+        document.getElementById("so").innerHTML="Quantidade de peças aprovadas "+jd+" <br>Quantidade de peças Reprovadas "+kk+" <br>Total de peças "+pecasTotal
+    
+        
+        
+    </script>
+</body>
+</html>
